@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ItzJustLars">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title></title>
+</head>
+
+<body>
+
+    <div class="containerInner w3-white">
+
+        <div id="introHome">
+
+            <div class="introHome-logo">
+                <img src="images/logo-stemwijzer.svg" alt="logo">
+            </div>
+
+            <div class="introHome-text">
+                <h1>
+                    Check je stem voor de verkiezingen
+                </h1>
+                <h2>
+                    Test je politieke voorkeur aan de hand van deze stellingen
+                </h2>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button id="startBtn">Start</button>
+        </div>
+
+
+        <div id="container" class="hidden">
+            <h1 id="title">title</h1>
+            <p id="statement">statement</p>
+        </div>
+
+        <div id="choiceButtons" class="hidden basic-padding">
+            <button id="pro" class="btn">Eens</button>
+            <button id="none" class="btn">Geen van beide</button>
+            <button id="contra" class="btn">Oneens</button>
+            <div class="w3-container">
+                <p class="partyCheckbox">Laat dit ondewerp zwaarder meetellen</p>
+                <input class="checkboxInput" id="important" type="checkbox">
+            </div>
+        </div>
+
+        <div id="returnButton" class="hidden">
+            <i class="fas fa-arrow-circle-left" id="returnBtn"></i>
+        </div>
+
+        <div id="skipStatement" class="hidden">
+            <button id="skip" class="">Overslaan<i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="checkResults" class="hidden">
+            <button id="showResults" class="">Bekijk resultaat</button>
+            <div class="filterButton">
+                <button id="secular" class="filterButton-button">Selecteer zittende partijen</button>
+                <button id="all" class="filterButton-button">Selecteer alle partijen</button>
+                <button id="big" class="filterButton-button">Selecteer de grote partijen</button>
+            </div>
+        </div>
+
+        <div id="uitslagen" class="hidden">
+            <h3>Uitslagen stemwijzer</h3>
+            <h4 id="partijen"></h4>
+            <h3><a id="home">Stemwijzer opnieuw doen? Klik hier</a></h3>
+        </div>
+
+    </div>
+
+</body>
+<script src="http://stemwijzer.dvc-icta.nl/testdata.js"></script>
+<script src="stemwijzer.js"></script>
+<script src="https://kit.fontawesome.com/3df4c7171e.js" crossorigin="anonymous"></script>
+
+</html>

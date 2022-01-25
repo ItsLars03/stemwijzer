@@ -1,0 +1,172 @@
+$black : black;
+$white : white;
+$txt_accent1 : #01B4DC;
+$green : #20a84b;
+$red : #eb2045;
+$lightgrey : #e7eaeb;
+$orange : #FF8C00;
+$purple : #9932CC;
+$darkred : #8B0000;		
+
+body{
+    background-image: url("images/tweedekamerbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hidden{
+    display: none;
+}
+
+.basic-padding{
+    padding: 25px 0;
+}
+
+.containerInner{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 50px 75px;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 7px;
+    height: fit-content;
+}
+
+.activeBtn{
+    background-color: $txt_accent1;
+}
+
+.introHome{
+
+    &-logo{
+
+        img{
+            max-width: 300px;
+        }
+    }
+
+    &-text{
+        h1{
+            color: $black;
+            font-size: 20px;
+        }
+
+        h2{
+            color: $txt_accent1;
+            font-size: 22px;
+        }
+    }
+}
+
+#returnButton{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 28px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        color:#018aa9;
+        transform: translateX(-5px);
+    }
+}
+
+#skipStatement{
+    width: fit-content;
+
+    #skip{
+        background: transparent;
+        border: 1px solid $lightgrey;
+        color: $black;
+
+        i{
+            padding-left: 10px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover{
+            border: 1px solid grey;
+
+            i{
+                transform: translateX(10px);
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+button{
+    background-color: $black;
+    border: 1px solid $black;
+    border-radius: 7px;
+    color: $white;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    padding: 15px 35px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+
+    &:hover{
+        background-color: #018aa9;
+        border: 1px solid #018aa9;
+        color: white;
+    }
+
+    &#agreeBtn{
+        &:hover{
+            background-color: $green;
+            border: 1px solid $green;
+        }
+    }
+
+    &#disagreeBtn{
+        &:hover{
+            background-color: $red;
+            border: 1px solid $red;
+        }
+    }
+}
+
+.filterButton{
+    width: 100%;
+    margin-top: 50px;
+
+    &#secular{
+        background-color: $orange;
+        border: 1px solid $orange;
+        color: $black;
+    }
+
+    &#all{
+        background-color: $purple;
+        border: 1px solid $purple;
+        color: $white;
+    }
+
+    &#big{
+        background-color: $darkred;
+        border: 1px solid $darkred;
+        color: $white;
+    }
+}
+
+#home{
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.remember-btn {
+    border: solid 2px gray;
+    background-color: #008ad0 !important;
+}

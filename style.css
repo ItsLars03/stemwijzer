@@ -1,0 +1,150 @@
+body {
+  background-image: url("images/tweedekamerbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hidden {
+  display: none;
+}
+
+.basic-padding {
+  padding: 25px 0;
+}
+
+.containerInner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 50px 75px;
+  position: relative;
+  margin-top: 15px;
+  border-radius: 7px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.activeBtn {
+  background-color: #01B4DC;
+}
+
+.introHome-logo img {
+  max-width: 300px;
+}
+
+.introHome-text h1 {
+  color: black;
+  font-size: 20px;
+}
+
+.introHome-text h2 {
+  color: #01B4DC;
+  font-size: 22px;
+}
+
+#returnButton {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 28px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#returnButton:hover {
+  color: #018aa9;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+#skipStatement {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#skipStatement #skip {
+  background: transparent;
+  border: 1px solid #e7eaeb;
+  color: black;
+}
+
+#skipStatement #skip i {
+  padding-left: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#skipStatement #skip:hover {
+  border: 1px solid grey;
+}
+
+#skipStatement #skip:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 7px;
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 15px 35px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #018aa9;
+  border: 1px solid #018aa9;
+  color: white;
+}
+
+button#agreeBtn:hover {
+  background-color: #20a84b;
+  border: 1px solid #20a84b;
+}
+
+button#disagreeBtn:hover {
+  background-color: #eb2045;
+  border: 1px solid #eb2045;
+}
+
+.filterButton {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.filterButton#secular {
+  background-color: #FF8C00;
+  border: 1px solid #FF8C00;
+  color: black;
+}
+
+.filterButton#all {
+  background-color: #9932CC;
+  border: 1px solid #9932CC;
+  color: white;
+}
+
+.filterButton#big {
+  background-color: #8B0000;
+  border: 1px solid #8B0000;
+  color: white;
+}
+
+#home:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.remember-btn {
+  border: solid 2px gray;
+  background-color: #008ad0 !important;
+}
+/*# sourceMappingURL=style.css.map */
